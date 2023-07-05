@@ -1,0 +1,25 @@
+- Create a grocery store dadtabase 
+
+CREATE TABLE groceries ( id INTEGER PRIMARY KEY, name TEXT, aisle INTEGER, quantity INTEGER, price INTEGER, popularity INTEGER);
+
+INSERT INTO groceries VALUES (1, "apple", 1,50,1,5);
+INSERT INTO groceries VALUES (2, "orange", 1, 40, 1.50,6);
+INSERT INTO groceries VALUES (3, "bread", 2,35,2.50,2);
+INSERT INTO groceries VALUES (4, "donuts", 2, 25,3.50,10);
+INSERT INTO groceries VALUES (5, "sugar", 3, 20, 2.50,4);
+INSERT INTO groceries VALUES (6, "flour", 3,35,2,3);
+INSERT INTO groceries VALUES (7, "spices", 3, 100,1.50,9);
+INSERT INTO groceries VALUES (8, "noodles", 4, 40, 2,11);
+INSERT INTO groceries VALUES (9, "sauce",4,40, 3,12);
+INSERT INTO groceries VALUES (10, "cereal", 5, 50,5,8);
+INSERT INTO groceries VALUES (11, "oatmeal", 5, 20, 6,7);
+INSERT INTO groceries VALUES (12,"cookies", 2, 40, 3.25,13);
+INSERT INTO groceries VALUES (13, "jam", 2, 15,4,14);
+INSERT INTO groceries VALUES (14,"peanut butter", 2, 15, 5,15);
+INSERT INTO groceries VALUES (15, "rice", 6, 35, 10,1);
+
+Display the database by price:
+SELECT * FROM groceries ORDER BY price asc;
+
+Display the top 3 most popular items
+SELECT name FROM groceries ORDER BY popularity desc limit 3;
